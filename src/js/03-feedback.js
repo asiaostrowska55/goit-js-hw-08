@@ -28,8 +28,8 @@ if (localStorage.getItem(LOCAL_KEY) === null) {
 
 feedbackForm.addEventListener('submit', event => {
   event.preventDefault();
+  console.log(localStorage.getItem(LOCAL_KEY));
   localStorage.removeItem(LOCAL_KEY);
   input.value = '';
   textarea.value = '';
-  console;
 });
